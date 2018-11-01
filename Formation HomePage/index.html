@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta title="Sandridge Primary School | Home Page">
+    <meta name="description" content="Welcome to Sandridge Primary School">
+    <meta name="keywords" content="Hertfordshire Primary School, Sandridge">
+    <meta name="author" content="JF Formation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sandridge_primary_school.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="outercontainer">
+
+    <div class="topbar">
+
+        <div class="left50">
+            <div class="logo"><img src="assets/logo-placeholder.png">
+            </div>
+        </div>
+
+        <div class="address">
+            <div>
+                <small class="uppercase white ">address<br>
+                    <span class="regularcase">Woodcock Hill, Sandridge <br>St. Albans Hertfordshire AL4 9EB</span>
+                </small>
+            </div>
+        </div>
+
+        <div class="call-us">
+            <div>
+                <small class="uppercase white ">call us<br>
+                    <span>01727 850</span>
+                </small>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navbar-container">
+
+        <div class="navbar">
+        <ul class="main-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Curriculum</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Parents</a></li>
+            <li><a href="#">Governors</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="search-icon"><input type="search" id="site-search" name="q"
+               placeholder="Search..."></li>
+        </ul>
+        </div>
+
+    </div>
+
+    <div class="header">
+            <h4 class="uppercase">on behalf of the children, staff and governors</h4>
+        <h1>Welcome to Sandridge</h1>
+        <h1>Primary School</h1>
+        <button class="uppercase">about us &nbsp;<i class="fa fa-arrow-right"></i></button>
+    </div>
+
+    <div class="top-four-boxes">
+        <div class="box1">
+            <span>&nbsp;</span>
+            <h4 class="box-h-text">Dates & Events &nbsp;<i class="fa fa-arrow-right"></i></h4>
+            <small>See the school term times and the dates of all events at the school.</small>
+        </div>
+
+        <div class="box2">
+            <span>&nbsp;</span>
+            <h4 class="box-h-text">Curriculum &nbsp;<i class="fa fa-arrow-right"></i></h4>
+            <small>Take a look at all of the subjects at Sandridge Primary School, from mathematics to art & design.</small>
+
+        </div>
+
+        <div class="box3">
+            <span>&nbsp;</span>
+            <h4 class="box-h-text">Ofsted : Good &nbsp;<i class="fa fa-arrow-right"></i></h4>
+            <small>View our latest Ofsted letter and share your views on the school.</small>
+
+        </div>
+
+        <div class="box4">
+            <span>&nbsp;</span>
+            <h4 class="box-h-text">School Gateway &nbsp;<i class="fa fa-arrow-right"></i></h4>
+            <small>Access the schools online payment system. Download on the App Store and get it on Google Play.</small>
+
+        </div>
+    </div>
+
+    <div class="article1">
+        <div class="width-15 profile-img">
+
+        </div>
+
+        <div class="width-35">
+            <h4 class="uppercase">miss lisa roberts, headteacher</h4>
+            <h1>A Message</h1>
+            <h1>from the</h1>
+            <h1>Headteacher</h1>
+        </div>
+
+        <div class="width-50 main-text">
+            <small>On behalf of the children, staff and governors, I would like to welcome you to Sandridge Primary School’s
+                website. Our school is an extremely nurturing school where the children are at the heart of everything we do.
+                Set in the picturesque village of Sandridge we work closely in partnership with other local schools, nurseries
+                and a range of community groups.
+            </small>
+            <br>
+            <small>Sandridge Primary School is a one form entry school with a morning only
+                Nursery class. We cater for children aged 3 to 11 years and have an intake of 30 pupils every year
+                (26 in our Nursery).</small>
+            <button class="uppercase cta">read more&nbsp; <i class="fa fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <div class="width-50"></div>
+    <div class="width-50"></div>
+
+</div>
+
+
+<script>
+$(document).ready(function(){
+    $("search-icon").click(function(){
+        $("site-search").toggleClass("hide");
+    });
+});
+</script>
+
+</body>
+</html>

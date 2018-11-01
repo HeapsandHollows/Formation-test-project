@@ -1,0 +1,430 @@
+$colour-dark-blue: #003557;
+$colour-yellow: #EDBB32;
+$colour-light-blue: #047AC4;
+$colour-white: #fff;
+$colour-black: #000;
+$colour-green: #43C077;
+$colour-pink: #EB774C;
+
+
+@mixin blue-background {
+  background-color: $colour-dark-blue;
+}
+
+//LAYOUT MIXINS
+
+@mixin center-text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@mixin no-margin {
+  margin: 0 auto;
+}
+
+@mixin xs-padding {
+  padding: 1%;
+}
+
+@mixin s-padding {
+  padding: 2%;
+}
+
+@mixin m-padding {
+  padding: 3%;
+}
+
+@mixin l-padding {
+  padding: 5% 1%;
+}
+
+@mixin flex {
+  display:flex;
+}
+//WIDTHS
+@mixin fiftypercent {
+  width: 50%;
+  max-width: 600px;
+}
+
+@mixin twentyfivepercent {
+  width: 25%;
+  max-width: 300px;
+}
+
+//USEFUL MIXINS
+@mixin cta {
+  color: $colour-black;
+  background-color: $colour-yellow;
+  padding: 0.5% 2.5%;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: $colour-light-blue;
+    color: $colour-white;
+  }
+}
+
+@mixin box-icons {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+
+}
+
+@mixin icon-background {
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: top;
+  justify-content: center;
+}
+
+@mixin boxhover {
+  background-color: #D9D9D9;
+  margin: 0% auto;
+}
+
+@mixin boxstyle {
+  background-color: $colour-white;
+  @include s-padding;
+  border: 0.5px solid #ebebeb;
+}
+
+//POPULAR CLASSES
+
+.cta {
+@include cta;
+  float: right;
+  margin: 5% auto;
+  font-size: 1.5vw;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.regularcase {
+  text-transform: none;
+}
+
+.hide {
+  display: none;
+}
+
+.box-h-text {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1vw;
+}
+
+.width-15 {
+  width: 15%;
+}
+
+.width-35 {
+  width: 35%;
+
+  h1 {
+    margin: 0 auto;
+    font-size: 3vw;
+  }
+
+  h4 {
+    margin: 0 auto;
+    font-size: 1.2vw;
+    color: $colour-light-blue;
+  }
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-100 {
+  width: 100%;
+  margin: 4% auto;
+  display: flex;
+}
+
+
+@font-face {
+    font-family: "roboto_slablight";
+    src: url('RobotoSlab-Light-webfont.eot');
+    src: url('RobotoSlab-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('RobotoSlab-Light-webfont.woff2') format('woff2'),
+         url('RobotoSlab-Light-webfont.woff') format('woff'),
+         url('RobotoSlab-Light-webfont.ttf') format('truetype'),
+         url('RobotoSlab-Light-webfont.svg#roboto_slablight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: roboto_slablight, Arial, Helvetica, sans-serif;;
+  margin: 0 auto;
+  overflow-x: hidden;
+  min-font-size: 12px !important;
+}
+
+.fa {
+  float: right;
+}
+
+.topbar {
+  @include blue-background;
+  @include flex;
+  @include s-padding;
+  flex-direction: row;
+  box-sizing: border-box;
+  //max-height: 100px;
+}
+
+.left50 {
+  @include fiftypercent;
+  @include flex;
+  align-items: flex-start;
+}
+
+.logo img {
+  @include twentyfivepercent;
+  @include flex;
+  margin: 1.5% auto 1.5% auto;
+}
+
+
+.address, .call-us {
+  @include twentyfivepercent;
+  @include flex;
+    color: $colour-white;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
+  span {
+    color: $colour-yellow;
+    letter-spacing: 0.5px;
+    font-size: 0.8em;
+  }
+}
+
+.address{
+  background-image: url("assets/address-icon.png");
+  @include icon-background;
+  background-position-x: 5%;
+  flex-grow: 1;
+}
+
+.call-us {
+  background-image: url("assets/phone-icon.png");
+  @include icon-background;
+  background-position-x: 26%;
+  flex-grow: 1;
+}
+
+.navbar-container {
+  background-color: $colour-light-blue;
+}
+
+.navbar {
+  @include center-text;
+  width: 80%;
+}
+
+.main-ul {
+  @include flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-flow: wrap;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 auto 0 -40px;
+
+  li {
+    padding: 1.5% 5px 1.5% 5px;
+    font-size: 1.2vw;
+    color: $colour-white;
+    border-bottom: 5px solid $colour-light-blue;
+    &:hover {
+    border-bottom: 5px solid $colour-yellow;
+  }
+  }
+
+  a {
+    color: $colour-white;
+    text-decoration: none;
+  }
+}
+
+#search-icon {
+  background-image: url(assets/search-icon.png);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10%;
+  &:hover {
+    border-bottom: 5px solid $colour-light-blue !important;
+  }
+
+  input {
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    @include xs-padding;
+  }
+}
+
+.header {
+  background-image: url("assets/classroom-img.png");
+  background-size: cover;
+  @include  no-margin;
+  text-align: center;
+  padding: 7% 0;
+
+  h4 {
+    @include no-margin;
+    color: $colour-yellow;
+    font-weight: 400;
+    font-size: 1.6vw;
+  }
+
+  h1 {
+    @include no-margin;
+    color: $colour-white;
+    font-size: 4vw;
+  }
+
+  button {
+    @include cta;
+    margin: 3% 0;
+    font-size: 1.5vw;
+  }
+}
+
+.top-four-boxes {
+  @include flex;
+  padding-bottom: 3%;
+    justify-content: center;
+    width: 80%;
+    margin: -5% auto;
+}
+
+.box1 {
+  @include boxstyle;
+  @include twentyfivepercent;
+  border-bottom: 4px solid $colour-green;
+  margin: 1% auto;
+  &:hover {
+  @include boxhover;
+  }
+
+  span {
+    background-image: url("assets/calendar-alt.png");
+    @include box-icons;
+  }
+
+  h4 {
+    text-align: left;
+  }
+  small {
+   font-size: 1vw;
+  }
+}
+
+
+.box2 {
+  @include boxstyle;
+  @include twentyfivepercent;
+  border-bottom: 4px solid $colour-yellow;
+  margin: 1% auto;
+  &:hover {
+    @include boxhover;
+  }
+
+  span {
+    background-image: url("assets/graduation-cap.png");
+    @include box-icons;
+  }
+
+  h4 {
+    text-align: left;
+  }
+  small {
+    font-size: 1vw;
+  }
+}
+
+.box3 {
+  @include boxstyle;
+  @include twentyfivepercent;
+  border-bottom: 4px solid $colour-pink;
+  margin: 1% auto;
+  &:hover {
+    @include boxhover;
+  }
+
+  span {
+    background-image: url("assets/check-circle.png");
+    @include box-icons;
+  }
+
+  h4 {
+    text-align: left;
+  }
+  small {
+    font-size: 1vw;
+  }
+}
+
+.box4 {
+  @include boxstyle;
+  @include twentyfivepercent;
+  border-bottom: 4px solid $colour-light-blue;
+  margin: 1% auto;
+  &:hover {
+    @include boxhover;
+  }
+
+  span {
+    background-image: url("assets/Group 15.png");
+    @include box-icons;
+    max-height: 1em;
+  }
+
+  h4 {
+    text-align: left;
+  }
+  small {
+    font-size: 1vw;
+  }
+}
+
+
+.profile-img {
+  background-image: url("assets/headteacher.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+
+  .article1 {
+    width: 80%;
+    display: flex;
+    margin: 5% auto;
+
+  small {
+    font-size: 1vw;
+  }
+}
+
+  .main-text  {
+  }
+
+  
+  //MEDIA QUERIES
+
+@media only screen and (max-width: 550px){
+    .box1, .box2, .box3, .box4, .main-text {
+    line-height: 0.5;
+    height: 50px;
+}
+}
