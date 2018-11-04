@@ -1,0 +1,448 @@
+.cta {
+  color: #000;
+  background-color: #EDBB32;
+  padding: 0.5% 2.5%;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  margin: 5% auto;
+  font-size: 1.5vw;
+  padding: 1.2% 2.25%; }
+  .cta:hover {
+    background-color: #047AC4;
+    color: #fff; }
+
+.white {
+  color: #fff !important; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.regularcase {
+  text-transform: none; }
+
+.hide {
+  display: none; }
+
+.box-h-text {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1vw; }
+
+.width-15 {
+  width: 15%; }
+
+.width-25 {
+  width: 25%;
+  margin: 4% 1% -2% 1%; }
+
+.width-35 {
+  width: 35%; }
+  .width-35 h1 {
+    margin: 0 auto;
+    font-size: 3.3vw; }
+  .width-35 h4 {
+    margin: 0 auto;
+    font-size: 1.2vw;
+    color: #047AC4; }
+
+.width-50 {
+  width: 50%; }
+
+.width-80 {
+  width: 80%;
+  margin: 4% auto 0% auto;
+  display: flex; }
+
+.width-100 {
+  width: 100%;
+  margin: 0% auto;
+  display: flex; }
+
+@font-face {
+  font-family: "roboto_slablight";
+  src: url("RobotoSlab-Light-webfont.eot");
+  src: url("RobotoSlab-Light-webfont.eot?#iefix") format("embedded-opentype"), url("RobotoSlab-Light-webfont.woff2") format("woff2"), url("RobotoSlab-Light-webfont.woff") format("woff"), url("RobotoSlab-Light-webfont.ttf") format("truetype"), url("RobotoSlab-Light-webfont.svg#roboto_slablight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "roboto_slablight", Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  overflow-x: hidden;
+  min-font-size: 12px !important; }
+
+a {
+  text-decoration: none; }
+
+.fa {
+  float: right; }
+
+.topbar {
+  background-color: #003557;
+  display: flex;
+  padding: 2%;
+  flex-direction: row;
+  box-sizing: border-box; }
+
+.left50 {
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  align-items: flex-start; }
+
+.logo img {
+  width: 25%;
+  max-width: 300px;
+  display: flex;
+  margin: 1.5% auto 1.5% auto; }
+
+.address, .call-us {
+  width: 25%;
+  max-width: 300px;
+  display: flex;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1.2vw; }
+  .address span, .call-us span {
+    color: #EDBB32;
+    letter-spacing: 0.5px;
+    font-size: 0.95em; }
+
+.address {
+  background-image: url("assets/address-icon.png");
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: top;
+  justify-content: center;
+  background-position-x: 0%;
+  flex-grow: 1; }
+  .address:hover {
+    background-size: 14%; }
+
+.call-us {
+  background-image: url("assets/phone-icon.png");
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: top;
+  justify-content: center;
+  background-position-x: 26%;
+  flex-grow: 1; }
+  .call-us:hover {
+    background-size: 14%; }
+
+.navbar-container {
+  background-color: #047AC4; }
+
+.navbar {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%; }
+
+.main-ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-flow: wrap;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 auto 0 -40px; }
+  .main-ul li {
+    padding: 1.5% 5px 1.5% 5px;
+    font-size: 1.2vw;
+    color: #fff;
+    border-bottom: 5px solid #047AC4;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    border-radius: 2px; }
+    .main-ul li:hover {
+      border-bottom: 5px solid #EDBB32; }
+  .main-ul a {
+    color: #fff;
+    text-decoration: none; }
+
+#search-icon {
+  background-image: url(assets/search-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10%; }
+  #search-icon:hover {
+    border-bottom: 5px solid #047AC4 !important; }
+  #search-icon input {
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    padding: 1%; }
+
+#site-search:hover {
+  border-bottom: 5px solid #047AC4 !important; }
+
+.header {
+  background-image: url("assets/classroom-img.png");
+  background-size: cover;
+  margin: 0 auto;
+  text-align: center;
+  padding: 7% 0; }
+  .header h4 {
+    margin: 0 auto;
+    color: #EDBB32;
+    font-weight: 400;
+    font-size: 1.5vw; }
+  .header h1 {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 4vw; }
+  .header button {
+    color: #000;
+    background-color: #EDBB32;
+    padding: 0.5% 2.5%;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    margin: 3% 0;
+    font-size: 1.5vw; }
+    .header button:hover {
+      background-color: #047AC4;
+      color: #fff; }
+
+.top-four-boxes {
+  display: flex;
+  padding-bottom: 3%;
+  justify-content: center;
+  width: 80%;
+  margin: -5% auto; }
+
+.box1 {
+  background-color: #fff;
+  padding: 2%;
+  border: 0.5px solid #ebebeb;
+  width: 25%;
+  max-width: 300px;
+  border-bottom: 4px solid #43C077;
+  margin: 1% auto; }
+  .box1:hover {
+    background-color: #D9D9D9;
+    margin: 0% auto; }
+  .box1 span {
+    background-image: url("assets/calendar-alt.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex; }
+  .box1 h4 {
+    text-align: left; }
+  .box1 small {
+    font-size: 1vw; }
+
+.box2 {
+  background-color: #fff;
+  padding: 2%;
+  border: 0.5px solid #ebebeb;
+  width: 25%;
+  max-width: 300px;
+  border-bottom: 4px solid #EDBB32;
+  margin: 1% auto; }
+  .box2:hover {
+    background-color: #D9D9D9;
+    margin: 0% auto; }
+  .box2 span {
+    background-image: url("assets/graduation-cap.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex; }
+  .box2 h4 {
+    text-align: left; }
+  .box2 small {
+    font-size: 1vw; }
+
+.box3 {
+  background-color: #fff;
+  padding: 2%;
+  border: 0.5px solid #ebebeb;
+  width: 25%;
+  max-width: 300px;
+  border-bottom: 4px solid #EB774C;
+  margin: 1% auto; }
+  .box3:hover {
+    background-color: #D9D9D9;
+    margin: 0% auto; }
+  .box3 span {
+    background-image: url("assets/check-circle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex; }
+  .box3 h4 {
+    text-align: left; }
+  .box3 small {
+    font-size: 1vw; }
+
+.box4 {
+  background-color: #fff;
+  padding: 2%;
+  border: 0.5px solid #ebebeb;
+  width: 25%;
+  max-width: 300px;
+  border-bottom: 4px solid #047AC4;
+  margin: 1% auto; }
+  .box4:hover {
+    background-color: #D9D9D9;
+    margin: 0% auto; }
+  .box4 span {
+    background-image: url("assets/Group 15.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    max-height: 1em; }
+  .box4 h4 {
+    text-align: left; }
+  .box4 small {
+    font-size: 1vw; }
+
+.profile-img {
+  background-image: url("assets/headteacher.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position-x: 50%; }
+
+.article1 {
+  width: 80%;
+  display: flex;
+  margin: 5% auto; }
+  .article1 small {
+    font-size: 1vw; }
+
+#slider-1, #slider-2, #slider-3 {
+  background-color: #003557; }
+  #slider-1 h1, #slider-2 h1, #slider-3 h1 {
+    margin: 0 auto 5% auto; }
+  #slider-1 h4, #slider-2 h4, #slider-3 h4 {
+    color: #EDBB32;
+    margin: 0 auto 0 auto; }
+  #slider-1 small, #slider-2 small, #slider-3 small {
+    color: #fff; }
+
+.slider-text1, .slider-text2, .slider-text3 {
+  padding: 5%; }
+
+.slider-image2 {
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: top;
+  justify-content: center;
+  background-size: cover;
+  background-image: url("assets/Mask Group 4.png");
+  background-position-y: 0%; }
+
+.pip-container {
+  display: flex;
+  justify-content: center; }
+
+.pips {
+  display: flex;
+  flex-flow: row;
+  width: 5%;
+  justify-content: space-evenly;
+  list-style: none; }
+  .pips li {
+    background-size: contain;
+    background-image: url("assets/liststyle.png");
+    background-repeat: no-repeat;
+    width: 10px; }
+    .pips li:hover {
+      background-image: url("assets/liststyleselected.png"); }
+
+#pip2 {
+  background-image: url("assets/liststyleselected.png"); }
+
+.newsletters-section {
+  background-color: #ebebeb;
+  display: flex;
+  flex-flow: column;
+  text-align: center; }
+  .newsletters-section h3 {
+    color: #047AC4;
+    font-size: 1.4em;
+    margin: 2% auto 5px auto; }
+  .newsletters-section h4 {
+    margin: 0 auto;
+    font-size: 0.7em; }
+
+.newsletters-icon {
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: top;
+  justify-content: center;
+  background-image: url("assets/Group 22.png");
+  background-position-x: 0%;
+  background-size: 2em;
+  background-position-y: 50%;
+  padding: 1em; }
+
+.newsletter-container {
+  display: flex;
+  flex-flow: row; }
+
+.newsletter1 {
+  background-image: url("assets/Mask Group 7.png.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  border-bottom: 5px solid #43C077;
+  margin-bottom: 5%; }
+
+.newsletter2 {
+  background-image: url("assets/Mask Group 8.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  border-bottom: 5px solid #EDBB32;
+  margin-bottom: 5%; }
+
+.newsletter3 {
+  background-image: url("assets/Mask Group 5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  border-bottom: 5px solid #EB774C;
+  margin-bottom: 5%; }
+
+.newsletter4 {
+  background-image: url("assets/Mask Group 6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  border-bottom: 5px solid #003557;
+  margin-bottom: 5%; }
+
+.newsletter-date {
+  font-size: 1em !important; }
+
+.readmore {
+  text-decoration: none;
+  color: #047AC4;
+  font-weight: 700;
+  font-size: 1em; }
+
+.contact-us {
+  background-color: #047AC4;
+  text-align: center;
+  padding: 5%; }
+
+.contact-icon {
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: top;
+  justify-content: center;
+  background-image: url("assets/Group 31.png");
+  height: 2em;
+  background-size: contain; }
+
+@media only screen and (max-width: 550px) {
+  .box1, .box2, .box3, .box4, .main-text {
+    line-height: 0.5;
+    height: 50px; } }
